@@ -6,6 +6,10 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" media="" /> </head>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -16,7 +20,23 @@
 <body ng-app="myApp" class="full-height">
     <div class="container-fluid body-content full-height">
 
- 
+      <div class="page-header">
+                  <h1>The magic wardrobe</h1> </div>
+              <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                          <a class="navbar-brand" href="#"><img src="" alt="Magic wardrobe"> </a>
+                      </div>
+                      <div id="navbar2" class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li class="active"><a data-ng-click="wardrobenav()">Home</a></li>
+                              <li><a data-ng-click="aboutusnav()">About Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!--/.container-fluid -->
+              </nav>
 
     <div ng-view class="row full-height"></div>
     </div>
@@ -40,8 +60,7 @@ app.config(function($routeProvider) {
 </script>
 
 
- 
+
 
 </body>
 </html>
-
