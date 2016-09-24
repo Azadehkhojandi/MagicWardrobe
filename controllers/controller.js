@@ -1,5 +1,5 @@
 var app = angular.module('myApp');
-app.controller('wardrobeCtrl', function ($scope, $http, Map,dressservice) {
+app.controller('wardrobeCtrl', function ($scope, $http, Map,dressservice,$location) {
     //alert("wardrobeCtrl");
     var _selected;
     $scope.sizes = ["06", "08", "10", "12", "14"];
@@ -19,7 +19,7 @@ app.controller('wardrobeCtrl', function ($scope, $http, Map,dressservice) {
         });
     }
 
-    $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho'
+    $scope.states = ['looking for red dress', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho'
   , 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana'
   , 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania'
   , 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
@@ -39,6 +39,10 @@ app.controller('wardrobeCtrl', function ($scope, $http, Map,dressservice) {
         , getterSetter: true
     };
     $scope.dresses=dressservice.getAll();
+
+    $scope.Open=function(){
+        $location.path('/dress');
+    }
 });
 app.controller('dressCtrl', function ($scope, $http) {
     alert("dressCtrl");

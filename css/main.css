@@ -12,8 +12,11 @@
     display:block;
     
 }
-
-.card img
+.card
+{
+     cursor: pointer;
+}
+.card-image
 {
     width:100%;
 }
