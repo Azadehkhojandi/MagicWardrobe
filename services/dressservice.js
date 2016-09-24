@@ -2,14 +2,14 @@
 app.service('dressservice', ['$filter', function ($filter) {
     var self = this;
     var dresses = [
-        { id: 1, lable: 'short ...',image:"/images/01-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km" },
-        { id: 2, lable: 'chic high',image:"images/02-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300" },
-        { id: 3, lable: 'short ...',image:"/images/03-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km" },
-        { id: 4, lable: 'chic high',image:"images/04-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300" },
-        { id: 5, lable: 'short ...',image:"/images/01-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km" },
-        { id: 6, lable: 'chic high',image:"images/02-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300" },
-        { id: 7, lable: 'short ...',image:"/images/03-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km" },
-        { id: 8, lable: 'chic high',image:"images/04-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300" }
+        { id: 1, lable: 'short ...',image:"/images/01-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km",tags:"colorful",size:"08"},
+        { id: 2, lable: 'chic high',image:"images/02-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300",tags:"blue",size:"10" },
+        { id: 3, lable: 'short ...',image:"/images/03-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km",tags:"",size:"08"},
+        { id: 4, lable: 'chic high',image:"images/04-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300",tags:"",size:"10" },
+        { id: 5, lable: 'short ...',image:"/images/01-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km" ,tags:"",size:"06"},
+        { id: 6, lable: 'chic high',image:"images/02-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300" ,tags:"",size:"10"},
+        { id: 7, lable: 'short ...',image:"/images/03-homepage-dress.png", buy: "$120", rent: "$120",distance:"5km",tags:"",size:"08" },
+        { id: 8, lable: 'chic high',image:"images/04-homepage-dress.png" ,buy: "$60", rent: "$60",distance:"less than 300",tags:"colorful",size:"08",size:"08" }
     ];
     self.getAll = function () {
         return dresses;
