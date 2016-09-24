@@ -1,4 +1,5 @@
-app.controller('wardrobeCtrl', function ($scope, $http, Map) {
+var app = angular.module('myApp');
+app.controller('wardrobeCtrl', function ($scope, $http, Map,dressservice) {
     //alert("wardrobeCtrl");
     var _selected;
     $scope.sizes = ["06", "08", "10", "12", "14"];
@@ -37,6 +38,7 @@ app.controller('wardrobeCtrl', function ($scope, $http, Map) {
         }
         , getterSetter: true
     };
+    $scope.dresses=dressservice.getAll();
 });
 app.controller('dressCtrl', function ($scope, $http) {
     alert("dressCtrl");
