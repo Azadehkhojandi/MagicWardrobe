@@ -12,7 +12,10 @@
     display:block;
     
 }
-
+.card
+{
+     cursor: pointer;
+}
 .card img
 {
     width:100%;

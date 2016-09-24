@@ -1,8 +1,8 @@
     
     <div class="col-xs-12 col-sm-12 col-lg-12 m-t-1 m-b-1">
      
-<!--             <input type="text" placeholder="I m looking for..." ng-model="selected" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" class="col-sm-8 form-control" />  -->
-            <input type="text" placeholder="I m looking for..." ng-model="searchText"  class=" form-control" /> 
+<!--            <input type="text" placeholder="I m looking for..." ng-model="searchText" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" class="col-sm-8 form-control" />   --> 
+             <input type="text" placeholder="I m looking for..." ng-model="searchText"  class=" form-control" />  
     </div>
    
   
@@ -10,7 +10,7 @@
     <div class="col-xs-12 bd-content full-height top-margin4-xs">
         
             <div class="card-columns full-height">
-                <div  class="card" ng-repeat="dress in dresses| filter:searchText  track by dress.id">
+                <div  class="card" ng-repeat="dress in dresses| filter:searchText  track by dress.id" ng-click="Open()" >
                       <img ng-src="{{dress.image}}" alt="{{dress.lable}}" />
                     
                     <div class="card-block">

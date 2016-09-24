@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute","ui.bootstrap"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
@@ -8,8 +8,8 @@ app.config(function($routeProvider) {
     .when("/about", {
         templateUrl : "views/about.html"
     })
-    .when("/green", {
-        templateUrl : "green.html"
+    .when("/dress", {
+        templateUrl : "views/dress.html"
     })
     .when("/blue", {
         templateUrl : "blue.html"
