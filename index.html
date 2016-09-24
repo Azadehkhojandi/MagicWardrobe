@@ -9,24 +9,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--  <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
 
-    
+
+
 
 <!--     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"> 
-  
-    <link rel="stylesheet" href="/css/main.css">
-    <link href="css/style.css" rel="stylesheet" media="" /> 
-    </head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
 
-    
-</head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="css/style.css" rel="stylesheet" media="" />
+    </head>
 
 <body ng-app="myApp" class="full-height">
     <div class="container-fluid body-content full-height">
 
-      <div class="page-header">
-                  <h1>The magic wardrobe</h1> </div>
-              <nav class="navbar navbar-default">
+<div class="headercolor">
+  <div class="container-fluid">
+  <div style="background-color: #e2e1eb; height:100px">
+  <img src="/images/logo.png" alt="">
+
+
+    <nav class="navbar navbar-default mynav">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <!-- <a class="navbar-brand" href="#"><img src="" alt="Magic wardrobe"> </a> -->
+            </div>
+            <div id="navbar2" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/#/">Home</a></li>
+                    <li><a href="#/about">About Us</a></li>
+                </ul>
+            </div>
+
+    </nav>
+  </div>
+  </div>
+</div>
+      <!-- <div class="page-header"> -->
+
+
+      <!-- </div>
+                  <!-- <h1>The magic wardrobe</h1> -->
+              <!-- <nav class="navbar navbar-default">
                   <div class="container-fluid">
                       <div class="navbar-header">
                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -40,7 +64,7 @@
                       </div>
                   </div>
                   <!--/.container-fluid -->
-              </nav>
+              <!-- </nav> -->
 
     <div ng-view class="row full-height"></div>
     </div>
@@ -49,13 +73,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-    
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
-        
-  
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
-       
+
        <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.min.js"></script>-->
    <!--      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>  -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
@@ -66,7 +90,7 @@
      <script src="/controllers/controller.js"></script>
       <script src="/controllers/dresscontroller.js"></script>
     <script src="/services/dressservice.js"></script>
-   
+
      <script>
             angular.element(document).ready(function () {
                 angular.bootstrap(document, ['myApp']);
