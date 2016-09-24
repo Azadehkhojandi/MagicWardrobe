@@ -11,10 +11,10 @@ app.service('dressservice', ['$filter', function ($filter) {
 { id: 6, label: 'Retro fun dress',image:'https://s-media-cache-ak0.pinimg.com/564x/af/65/77/af6577efe9c0dfd921f03127cc7f6cb8.jpg' ,buy: '$60', rent: '$60',distance:'less than 300' ,tags:'red',size:'10'},
 { id: 7, label: 'Short dress with purple flowers',image:'https://s-media-cache-ak0.pinimg.com/564x/08/bc/c8/08bcc81e5c8d1335999077191f596531.jpg', buy: '$120', rent: '$120',distance:'5km',tags:'red',size:'08' },
 { id: 8, label: 'High line evening dress',image:'https://s-media-cache-ak0.pinimg.com/564x/51/03/d2/5103d291659bded22312e666798abf53.jpg' ,buy: '$60', rent: '$60',distance:'less than 300',tags:'red',size:'08'},
-{ id: 9, label: 'My favourite dress',image:'/images/01-homepage-dress.png', buy: '$120', rent: '$120',distance:'5km' ,tags:'red',size:'06'},
-{ id: 10, label: 'Retro fun dress',image:'/images/02-homepage-dress.png' ,buy: '$60', rent: '$60',distance:'less than 300' ,tags:'red',size:'10'},
-{ id: 11, label: 'Short dress with purple flowers',image:'/images/03-homepage-dress.png', buy: '$120', rent: '$120',distance:'5km',tags:'red',size:'08' },
-{ id: 12, label: 'High line evening dress',image:'/images/04-homepage-dress.png' ,buy: '$60', rent: '$60',distance:'less than 300',tags:'red',size:'08'}
+{ id: 9, label: 'My favourite dress',image:'/images/01-homepage-dress.png', buy: '$120', rent: '$120',distance:'5km' ,tags:'light',size:'06'},
+{ id: 10, label: 'Retro fun dress',image:'/images/02-homepage-dress.png' ,buy: '$60', rent: '$60',distance:'less than 300' ,tags:'light',size:'10'},
+{ id: 11, label: 'Short dress with purple flowers',image:'/images/03-homepage-dress.png', buy: '$120', rent: '$120',distance:'5km',tags:'light',size:'08' },
+{ id: 12, label: 'High line evening dress',image:'/images/04-homepage-dress.png' ,buy: '$60', rent: '$60',distance:'less than 300',tags:'light',size:'08'}
 
 ];
 
