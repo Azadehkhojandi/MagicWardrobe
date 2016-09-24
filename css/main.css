@@ -13,8 +13,10 @@
     
 }
 
-
-
+.card img
+{
+    width:100%;
+}
 
 .full-height-none {
     height: 100%;
