@@ -2,21 +2,22 @@
 <!DOCTYPE html>
 <html class="full-height">
 <head>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Magic Wardrobe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+
+
+
+
+<!--     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="/css/main.css">
-
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <link href="css/style.css" rel="stylesheet" media="" /> </head>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-</head>
+    <link href="css/style.css" rel="stylesheet" media="" />
+    </head>
 
 <body ng-app="myApp" class="full-height">
     <div class="container-fluid body-content full-height">
@@ -67,26 +68,48 @@
 
     <div ng-view class="row full-height"></div>
     </div>
-<script>
-var app = angular.module("myApp", ["ngRoute"]);
-app.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "views/main.html"
-    })
-    .when("/about", {
-        templateUrl : "views/about.html"
-    })
-    .when("/green", {
-        templateUrl : "green.html"
-    })
-    .when("/blue", {
-        templateUrl : "blue.html"
-    });
-});
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+
+       <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.min.js"></script>-->
+   <!--      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>  -->
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script> -->
+        <!-- <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.3.js"></script> -->
+    <script src="/scripts/typeahead.bundle.js"></script>
+     <script src="/app.js"></script>
+     <script src="/controllers/controller.js"></script>
+      <script src="/controllers/dresscontroller.js"></script>
+    <script src="/services/dressservice.js"></script>
+
+     <script>
+            angular.element(document).ready(function () {
+                angular.bootstrap(document, ['myApp']);
+                //document.body.style.display = 'block';
+            });
+        </script>
+        <script type="text/javascript">
+            $('input.typeahead').typeahead({
+                source: function (query, process) {
+                    return $.get('/ajaxpro.php', {
+                        query: query
+                    }, function (data) {
+                        console.log(data);
+                        data = $.parseJSON(data);
+                        return process(data);
+                    });
+                }
+            });
+        </script>
 
 
 </body>
