@@ -1,0 +1,24 @@
+<form id="formWardrobe" name="formWardrobe" role="form" class="top-margin4-xs">
+    <div class="col-xs-12 top-margin1-xs">
+        <div class="col-sm-4 top-margin1-xs">
+            <input type="text" placeholder="I m looking for..." ng-model="selected" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" class="col-sm-4 form-control" /> </div>
+        <div class="col-sm-4 top-margin1-xs">
+            <!--SEARCH LOCATION-->
+            <form name="searchForm" novalidate ng-submit="search()">
+                <div class="input-group">
+                    <input name="place" type="text" class="form-control" placeholder="Search location" ng-model="searchPlace" required /> <span class="input-group-btn">
+               
+            </span> </div>
+            </form>
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-4 top-margin1-xs">
+            <div class="form-input select-menu">
+                <!--<span class="caret">dropdown</span>-->
+                <select class="form-control" name="size" ng-model="size" ng-options="x for x in sizes">
+                    <option value="">Please select</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
