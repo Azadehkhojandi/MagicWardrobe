@@ -11,14 +11,16 @@
         
             <div class="card-columns full-height">
                 <div  class="card" ng-repeat="dress in dresses| filter:searchText  track by dress.id">
-                      <img ng-src="{{dress.image}}" alt="{{dress.lable}}" />
+                      <img ng-src="{{dress.image}}" alt="{{dress.label}}" />
                     
                     <div class="card-block">
                        
                         
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <h4 class="card-title">{{dress.lable}}</h4>
-                        <p class="card-text">{{dress.distance}} - {{dress.buy}} {{dress.rent}}</p>
+                       
+                        <h4 class="card-title" style="font : bold 14px Verdana">{{dress.label}}</h4>
+                        <p class="card-text m-b-0 text-muted" style="font : 12px Verdana; color:#55556e">Buy me for&nbsp;{{dress.buy}} </p>
+                        <p class="card-text m-b-0 text-muted" style="font : 12px Verdana; color:#55556e">Borrow me for&nbsp;{{dress.rent}}</p>
+                        <p class="card-text text-muted" style="font : 12px Verdana;"><span><img src="/images/icon-map.jpg" alt"location - {{dress.distance}}" /></span>less than &nbsp;{{dress.distance}}</p>
                     </div>
                 </div>
 
