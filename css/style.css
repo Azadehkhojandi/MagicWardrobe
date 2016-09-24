@@ -61,7 +61,9 @@ body {
     margin-right: 15px;
     margin-left: 15px;
 }
-
+body {
+  background-color: #f9f9f9 !important;
+}
 .navbar-nav>li>.dropdown-menu {
     z-index: 9999;
 }
@@ -75,4 +77,16 @@ h3 img {
     margin: 20px 0;
     border-radius: 5px;
     border: 1px solid silver;
+}
+
+.mycard{
+  width: 1000px;
+  margin: auto;
+}
+.headercolor{
+  /*background-color: #e2e1eb;*/
+  margin-bottom: 20px;
+}
+.mynav{
+  float: right;
 }
