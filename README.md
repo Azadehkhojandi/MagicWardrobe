@@ -34,11 +34,18 @@ gulp
 </li>
 </ul>
 
+<p>
 How to run:
-1- Install node js
-2- run npm install to install all the packages
-3- run gulp
-4- browse http://localhost:8080/
+1- Install node js <br/>
+2- run npm install to install all the packages <br/>
+3- run gulp <br/>
+4- browse http://localhost:8080/ <br/>
+</P>
+<p>
+how to contribute: <br/>
+simply fork the repo and then send pull request
+</P>
+
 
 
 
