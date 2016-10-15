@@ -9,36 +9,24 @@
     background-color: #f9f9f9;
 }
 
-.typeahead-demo .custom-popup-wrapper > .message {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-    color: #868686;
-}
+    .typeahead-demo .custom-popup-wrapper > .message {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        color: #868686;
+    }
 
-.typeahead-demo .custom-popup-wrapper > .dropdown-menu {
-    position: static;
-    float: none;
-    display: block;
-    min-width: 160px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-}
+    .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+        position: static;
+        float: none;
+        display: block;
+        min-width: 160px;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
 
-.navbar-brand {
-    padding: 0px;
-}
-
-.navbar-brand>img {
-    height: 100%;
-    padding: 15px;
-    width: auto;
-}
-
-.example2 .navbar-brand>img {
-    padding: 7px 15px;
-}
+ 
 
 .navbar-alignit .navbar-header {
     -webkit-transform-style: preserve-3d;
@@ -56,10 +44,12 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+
 body {
-  background-color: #f9f9f9 !important;
+    background-color: #f9f9f9 !important;
 }
-.navbar-nav>li>.dropdown-menu {
+
+.navbar-nav > li > .dropdown-menu {
     z-index: 9999;
 }
 
@@ -74,15 +64,17 @@ h3 img {
     border: 1px solid silver;
 }
 
-.mycard{
-  width: 1000px;
-  margin: auto;
+.mycard {
+    width: 1000px;
+    margin: auto;
 }
-.headercolor{
-  background-color: #e2e1eb;
-  margin-bottom: 20px;
+
+.headercolor {
+    background-color: #e2e1eb;
+    margin-bottom: 20px;
 }
-.mynav{
-  float: right;
-  background-color: #e2e1eb;
+
+.mynav {
+    float: right;
+    background-color: #e2e1eb;
 }
