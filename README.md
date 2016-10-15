@@ -18,4 +18,32 @@ She hacks 2016
 
 </ul>
 
+Tech stack:
+<ul>
+<li>
+<a href ="http://v4-alpha.getbootstrap.com/getting-started/build-tools/#tooling-setup">Bootstrap 4</a>
+</li>
+<li>
+<a href ="https://docs.angularjs.org/guide/component">Angular 1.5</a>
+</li>
+<li>
+node 
+</li>
+<li>
+gulp
+</li>
+</ul>
+
+How to run:
+1- Install node js
+2- run npm install to install all the packages
+3- run gulp
+4- browse http://localhost:8080/
+
+
+
+
+
+
+
 
