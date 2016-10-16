@@ -81,33 +81,7 @@
 }
 
 
-
-.typeahead-demo .custom-popup-wrapper {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    background-color: #f9f9f9;
-}
-
-    .typeahead-demo .custom-popup-wrapper > .message {
-        padding: 10px 20px;
-        border-bottom: 1px solid #ddd;
-        color: #868686;
-    }
-
-    .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
-        position: static;
-        float: none;
-        display: block;
-        min-width: 160px;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
+ 
 
 .header-background {
     background: linear-gradient(to bottom, #e2e1eb 70%, #f9f9f9 30%);
@@ -117,59 +91,26 @@
     outline: none !important;
 }
 
-/* responsive nav stacked liked 3.x */
 @media(max-width:992px) {
-    #nav1.navbar .navbar-brand {
+    .navbar .navbar-brand {
         float: none;
         display: block;
     }
 
-    #nav1.navbar .navbar-nav > .nav-item {
+    .navbar .navbar-nav > .nav-item {
         float: none;
         margin-left: .1rem;
     }
 
-    #nav1.navbar .navbar-nav {
+    .navbar .navbar-nav {
         float: none !important;
-    }
-}
-
-@media(max-width:768px) {
-    #nav2.navbar .navbar-brand {
-        float: none;
-        display: block;
-    }
-
-    #nav2.navbar .navbar-nav > .nav-item {
-        float: none;
-        margin-left: .1rem;
-    }
-
-    #nav2.navbar .navbar-nav {
-        float: none !important;
-    }
-}
-
-@media(max-width:544px) {
-    #nav3.navbar .navbar-brand {
-        float: none;
-        display: block;
-    }
-
-    #nav3.navbar .navbar-nav > .nav-item {
-        float: none;
-        margin-left: .1rem;
-    }
-
-    #nav3.navbar .navbar-nav {
-        float: none !important;
-    }
-
-    .header-background {
-        background: linear-gradient(to bottom, #e2e1eb 60%, #f9f9f9 40%);
     }
     
-    .navbar-toggleable-sm {
+    .header-background {
+            background: linear-gradient(to bottom, #e2e1eb 60%, #f9f9f9 40%);
+        }
+        
+    .navbar-toggleable-md {
         background: #e2e1eb;
     }
 }
