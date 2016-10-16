@@ -8,7 +8,7 @@
 </div>
 <div class="card-columns ">
     <div class="card" ng-repeat="dress in dresses| filter:searchText  track by dress.id" ng-click="Open()">
-        <img ng-src="{{dress.image}}" alt="{{dress.label}}" class="card-image-top img-fluid" />
+        <img ng-src="{{dress.image}}" alt="{{dress.label}}" class="card-image-top" />
         <div class="card-block">
             <h4 class="card-title" style="font : bold 14px Verdana">{{dress.label}}</h4>
             <p class="card-text m-b-0 text-muted" style="font : 12px Verdana; color:#55556e">Buy me for&nbsp;{{dress.buy}} </p>
