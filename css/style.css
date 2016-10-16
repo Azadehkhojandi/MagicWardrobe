@@ -83,6 +83,8 @@ body {
 .highlighted-box
 {
     background-color: #eceaeb;
+    border:1px solid #dfdfdf;
+    border-radius: 4px;
 }
  
 
