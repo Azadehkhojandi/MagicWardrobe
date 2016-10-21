@@ -1,0 +1,27 @@
+{
+  "name": "themagicwardrobe",
+  "version": "1.0.0",
+  "description": "buy/rent dresses",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "browserify": "^13.1.0",
+    "gulp-open": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azadehkhojandi/MagicWardrobe.git"
+  },
+  "author": "azadeh khojandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azadehkhojandi/MagicWardrobe/issues"
+  },
+  "homepage": "https://github.com/Azadehkhojandi/MagicWardrobe#readme"
+}
